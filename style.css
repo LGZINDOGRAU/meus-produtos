@@ -1,75 +1,116 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset básico */
+* {
   margin: 0;
-  background-color: #fff8f0;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
+/* Header */
 header {
-  background-color: #4CAF50;
+  background-color: #7cb342;
   color: white;
-  text-align: center;
-  padding: 1rem;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav a {
+header nav a {
   color: white;
+  margin-left: 15px;
   text-decoration: none;
-  margin: 0 10px;
   font-weight: bold;
 }
 
-nav a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 
-#hero {
-  text-align: center;
-  padding: 2rem;
-  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
+/* Hero */
+.hero {
+  background-image: url('imagens/banner.jpg'); /* coloque um banner bonito */
+  background-size: cover;
+  background-position: center;
   color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #ff9800;
+.hero .btn {
+  background-color: #f57f17;
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
   text-decoration: none;
-  margin-top: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background 0.3s ease;
 }
 
+.hero .btn:hover {
+  background-color: #ef6c00;
+}
+
+/* Produtos */
 .produtos {
-  padding: 2rem;
+  padding: 50px 20px;
   text-align: center;
 }
 
-.grid {
+.produtos .grid {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  gap: 1.5rem;
 }
 
-.item {
-  background: white;
+.produtos .item {
+  background-color: #f0f0f0;
+  padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 1rem;
   width: 200px;
+  transition: transform 0.3s ease;
 }
 
-.item img {
+.produtos .item:hover {
+  transform: translateY(-5px);
+}
+
+.produtos img {
   width: 100%;
+  height: 150px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
+/* Contato */
+#contato {
+  background-color: #c5e1a5;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#contato .btn {
+  background-color: #7cb342;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Footer */
 footer {
-  background-color: #333;
+  background-color: #33691e;
   color: white;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 20px;
 }
 
+/* Responsivo */
+@media(max-width:768px){
+  .produtos .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
