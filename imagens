@@ -1,0 +1,11 @@
+site-vendas/
+│
+├── index.html
+├── style.css
+├── script.js
+└── imagens/
+     ├── geleia-amora.jpg
+     ├── geleia-jatoba.jpg
+     ├── frango-caipira.jpg
+     ├── frutas.jpg
+     └── peixe.jpg
