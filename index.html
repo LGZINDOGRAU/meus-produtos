@@ -1,78 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Produtos - Mel e Peixe</title>
-    <style>
-        /* Estilo básico para a página ficar mais bonita */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #333;
-            text-align: center;
-        }
-        .produto {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-        }
-        .produto img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-        .contato {
-            text-align: center;
-            font-size: 1.2em;
-            font-weight: bold;
-            background-color: #e0f0ff;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        .whatsapp-link {
-            color: #25D366; /* Cor do WhatsApp */
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delícias da Fazenda - Produtos Naturais</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Nossos Produtos Especiais</h1>
-        
-        <div class="produto">
-            <h2>Mel Puro de Abelha</h2>
-            <img src="URL_DA_SUA_FOTO_DE_MEL_AQUI" alt="Foto de Mel">
-            <p>Nosso mel é 100% puro e natural, colhido com carinho. Perfeito para sua saúde e para adoçar seu dia.</p>
-            <p><strong>Preço:</strong> R$ 25,00 (Pote de 500g)</p>
+
+  <header>
+    <h1>🍓 Delícias da Fazenda 🍗🐟</h1>
+    <nav>
+      <a href="#geleias">Geleias</a>
+      <a href="#frango">Carne de Frango</a>
+      <a href="#frutas">Frutas da Época</a>
+      <a href="#peixes">Peixes</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Produtos frescos direto da fazenda</h2>
+    <p>Geleias artesanais, carnes, frutas e peixes selecionados com amor ❤️</p>
+    <a href="#geleias" class="btn">Ver produtos</a>
+  </section>
+
+  <main>
+    <section id="geleias" class="produtos">
+      <h2>Geleias Artesanais</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="https://via.placeholder.com/200" alt="Geleia de Amora">
+          <h3>Geleia de Amora</h3>
+          <p>Feita com amoras frescas, 100% natural.</p>
+          <span>R$ 15,00</span>
         </div>
-        
-        <div class="produto">
-            <h2>Peixe Fresco da Região</h2>
-            <img src="URL_DA_SUA_FOTO_DE_PEIXE_AQUI" alt="Foto de Peixe Fresco">
-            <p>Peixes frescos, pescados diariamente. Qualidade garantida para sua mesa.</p>
-            <p><strong>Preço:</strong> Consulte os preços do dia.</p>
+        <div class="item">
+          <img src="https://via.placeholder.com/200" alt="Geleia de Jatobá">
+          <h3>Geleia de Jatobá</h3>
+          <p>Deliciosa e nutritiva, direto da natureza.</p>
+          <span>R$ 18,00</span>
         </div>
-        
-        <div class="contato">
-            <p>Gostou? Faça sua encomenda!</p>
-            <p>Entre em contato pelo WhatsApp:</p>
-            <a href="https://wa.me/55SEUNUMERO" class="whatsapp-link">
-                Clique aqui para falar conosco!
-            </a>
-            <p>Ou nos ligue: (XX) XXXX-XXXX</p>
+      </div>
+    </section>
+
+    <section id="frango" class="produtos">
+      <h2>Carne de Frango</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="https://via.placeholder.com/200" alt="Frango Caipira">
+          <h3>Frango Caipira</h3>
+          <p>Criado solto e alimentado naturalmente.</p>
+          <span>R$ 25,00/kg</span>
         </div>
-        
-    </div>
+      </div>
+    </section>
+
+    <section id="frutas" class="produtos">
+      <h2>Frutas da Época</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="https://via.placeholder.com/200" alt="Manga">
+          <h3>Manga</h3>
+          <p>Docinha e suculenta, colhida no ponto certo.</p>
+          <span>R$ 8,00/kg</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="peixes" class="produtos">
+      <h2>Peixes Frescos</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="https://via.placeholder.com/200" alt="Tilápia Fresca">
+          <h3>Tilápia Fresca</h3>
+          <p>Peixe fresco, limpo e pronto para preparo.</p>
+          <span>R$ 22,00/kg</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <h2>Entre em Contato</h2>
+    <p>📞 (11) 99999-9999 | 📧 contato@deliciasdafazenda.com</p>
+    <p>© 2025 Delícias da Fazenda - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
