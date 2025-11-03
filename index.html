@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delícias da Fazenda</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Header -->
   <header>
-    <h1>Delícias da Fazenda</h1>
+    <div class="logo">
+      <h1>Delícias da Fazenda</h1>
+    </div>
     <nav>
       <a href="#geleias">Geleias</a>
       <a href="#frango">Frango</a>
@@ -21,64 +25,62 @@
 
   <!-- Hero -->
   <section class="hero">
-    <h2>Produtos frescos e artesanais</h2>
-    <p>Geleias, carnes, frutas e peixes direto da fazenda</p>
-    <a href="#geleias" class="btn">Ver Produtos</a>
+    <div class="hero-text">
+      <h2>Produtos frescos e naturais, direto da fazenda!</h2>
+      <a href="#geleias" class="btn">Ver Produtos</a>
+    </div>
   </section>
 
-  <!-- Geleias -->
+  <!-- Produtos -->
   <section id="geleias" class="produtos">
     <h2>Geleias Artesanais</h2>
     <div class="grid">
       <div class="item">
         <img src="imagens/geleia-amora.jpg" alt="Geleia de Amora">
         <h3>Geleia de Amora</h3>
-        <p>100% natural e deliciosa.</p>
+        <p>Feita com amoras frescas, 100% natural.</p>
         <span>R$ 15,00</span>
       </div>
       <div class="item">
         <img src="imagens/geleia-jatoba.jpg" alt="Geleia de Jatobá">
-        <h3>Geleia de Jabuticaba</h3>
-        <p>Sabor natural.</p>
-        <span>R$ 15,00</span>
+        <h3>Geleia de Jatobá</h3>
+        <p>Doce e exótico, direto da natureza.</p>
+        <span>R$ 18,00</span>
       </div>
     </div>
   </section>
 
-  <!-- Frango -->
   <section id="frango" class="produtos">
     <h2>Frango Caipira</h2>
     <div class="grid">
       <div class="item">
-        <img src="imagens/frango-caipira.jpg" alt="Frango">
+        <img src="imagens/frango-caipira.jpg" alt="Frango Caipira">
         <h3>Frango Inteiro</h3>
-        <p>Fresco e natural.</p>
+        <p>Fresco e saboroso, criado com carinho.</p>
         <span>R$ 25,00</span>
       </div>
     </div>
   </section>
 
-  <!-- Frutas -->
   <section id="frutas" class="produtos">
-    <h2>Frutas da estação</h2>
+    <h2>Frutas da Estação</h2>
     <div class="grid">
       <div class="item">
         <img src="imagens/frutas.jpg" alt="Frutas">
         <h3>Mix de Frutas</h3>
-        <p>Somente frutas frescas da estação.</p>
+        <p>Frutas frescas da época, direto da fazenda.</p>
         <span>R$ 12,00</span>
       </div>
     </div>
   </section>
 
-  <!-- Peixes -->
   <section id="peixes" class="produtos">
     <h2>Peixes Frescos</h2>
     <div class="grid">
       <div class="item">
-        <img src="imagens/peixe.jpg" alt="Peixe">
+        <img src="imagens/peixe.jpg" alt="Peixe Fresco">
         <h3>Tilápia</h3>
-        <p>Fresquinho e saudável.</p>
+        <p>Peixe fresco e saudável para sua refeição.</p>
         <span>R$ 30,00</span>
       </div>
     </div>
@@ -86,14 +88,14 @@
 
   <!-- Contato -->
   <section id="contato">
-    <h2>Faça seu pedido!</h2>
-    <p>Entre em contato pelo WhatsApp:</p>
-    <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btn">Enviar WhatsApp</a>
+    <h2>Fale conosco</h2>
+    <p>Entre em contato pelo WhatsApp para mais informações ou para realizar seu pedido.</p>
+    <a href="https://wa.me/seunumerodetelefone" class="btn">WhatsApp</a>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Delícias da Fazenda - Todos os direitos reservados</p>
+    <p>&copy; 2025 Delícias da Fazenda - Todos os direitos reservados</p>
   </footer>
 
   <script src="script.js"></script>
